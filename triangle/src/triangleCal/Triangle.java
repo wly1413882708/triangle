@@ -2,15 +2,9 @@ package triangleCal;
 
 public class Triangle {
 	
-	private double a, b, c;//三角形的三条边
+	private int a, b, c;//三角形的三条边
 	
-	public Triangle(){//默认边长为1的等边三角形
-		setA(1);
-		setB(1);
-		setC(1);
-	}
-	
-	public Triangle(double la, double lb, double lc){//输入三角形的三条边长
+	public Triangle(int la, int lb, int lc){//输入三角形的三条边长
 		setA(la);
 		setB(lb);
 		setC(lc);
@@ -20,7 +14,7 @@ public class Triangle {
 		return a;
 	}
 
-	public void setA(double a) {
+	public void setA(int a) {
 		this.a = a;
 	}
 
@@ -28,7 +22,7 @@ public class Triangle {
 		return b;
 	}
 
-	public void setB(double b) {
+	public void setB(int b) {
 		this.b = b;
 	}
 
@@ -36,7 +30,7 @@ public class Triangle {
 		return c;
 	}
 
-	public void setC(double c) {
+	public void setC(int c) {
 		this.c = c;
 	}
 }

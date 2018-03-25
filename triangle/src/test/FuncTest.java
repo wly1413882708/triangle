@@ -50,21 +50,15 @@ public class FuncTest {
 		
 		f.setFunc(4, 4, 6);
 		assertEquals(2, f.getAns());//等腰三角形
-		
-		f.setFunc(6.88, 4.54, 6.88);
-		assertEquals(2, f.getAns());//等腰三角形
 	}
 
 	@Test
-	public void testIsEquilateral() {
+	public void testIsEquilateral() {		
 		f.setFunc(1, 1, 1);
 		assertEquals(true, f.isEquilateral());
 		
-		f.setFunc(1.46, 1.46, 1.46);
+		f.setFunc(50, 50, 50);
 		assertEquals(true, f.isEquilateral());
-		
-		f.setFunc(1.46, 1.46, 1.45);
-		assertEquals(false, f.isEquilateral());
 	}
 
 	@Test
@@ -72,7 +66,10 @@ public class FuncTest {
 		f.setFunc(1, 1, 1);
 		assertEquals(true, f.isIsosceles());
 		
-		f.setFunc(1.46, 1.46, 1.0);
+		f.setFunc(2, 1, 1);
+		assertEquals(true, f.isIsosceles());
+		
+		f.setFunc(1, 2, 1);
 		assertEquals(true, f.isIsosceles());
 		
 		f.setFunc(3, 4, 5);
